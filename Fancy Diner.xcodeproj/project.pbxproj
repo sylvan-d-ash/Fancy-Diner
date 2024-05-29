@@ -11,6 +11,10 @@
 		5E1C4E912C074B7D00FDD07F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C4E902C074B7D00FDD07F /* ContentView.swift */; };
 		5E1C4E932C074B7F00FDD07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C4E922C074B7F00FDD07F /* Assets.xcassets */; };
 		5E1C4E962C074B7F00FDD07F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C4E952C074B7F00FDD07F /* Preview Assets.xcassets */; };
+		5E1C4E9F2C074BB700FDD07F /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C4E9E2C074BB700FDD07F /* Bundle.swift */; };
+		5E1C4EA22C0755E900FDD07F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C4EA12C0755E900FDD07F /* Menu.swift */; };
+		5E1C4EA42C0761F400FDD07F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C4EA32C0761F400FDD07F /* Order.swift */; };
+		5E1C4EA72C07630500FDD07F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C4EA62C07630500FDD07F /* menu.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		5E1C4E902C074B7D00FDD07F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E1C4E922C074B7F00FDD07F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E1C4E952C074B7F00FDD07F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E1C4E9E2C074BB700FDD07F /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		5E1C4EA12C0755E900FDD07F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		5E1C4EA32C0761F400FDD07F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5E1C4EA62C07630500FDD07F /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,9 @@
 			children = (
 				5E1C4E8E2C074B7D00FDD07F /* Fancy_DinerApp.swift */,
 				5E1C4E902C074B7D00FDD07F /* ContentView.swift */,
+				5E1C4EA02C0755E000FDD07F /* Model */,
+				5E1C4E9D2C074BA900FDD07F /* Extensions */,
+				5E1C4EA52C0762E800FDD07F /* Resources */,
 				5E1C4E922C074B7F00FDD07F /* Assets.xcassets */,
 				5E1C4E942C074B7F00FDD07F /* Preview Content */,
 			);
@@ -65,6 +76,31 @@
 				5E1C4E952C074B7F00FDD07F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E1C4E9D2C074BA900FDD07F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E1C4E9E2C074BB700FDD07F /* Bundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E1C4EA02C0755E000FDD07F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E1C4EA12C0755E900FDD07F /* Menu.swift */,
+				5E1C4EA32C0761F400FDD07F /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E1C4EA52C0762E800FDD07F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E1C4EA62C07630500FDD07F /* menu.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1C4EA72C07630500FDD07F /* menu.json in Resources */,
 				5E1C4E962C074B7F00FDD07F /* Preview Assets.xcassets in Resources */,
 				5E1C4E932C074B7F00FDD07F /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E1C4E912C074B7D00FDD07F /* ContentView.swift in Sources */,
+				5E1C4E9F2C074BB700FDD07F /* Bundle.swift in Sources */,
+				5E1C4EA42C0761F400FDD07F /* Order.swift in Sources */,
+				5E1C4EA22C0755E900FDD07F /* Menu.swift in Sources */,
 				5E1C4E8F2C074B7D00FDD07F /* Fancy_DinerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
