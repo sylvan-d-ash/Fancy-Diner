@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct MenuSection: Decodable {
+struct MenuSection: Decodable, Identifiable {
     let id: UUID
     let name: String
     let items: [MenuItem]
 }
 
-struct MenuItem: Decodable {
+struct MenuItem: Decodable, Identifiable {
     let id: UUID
     let name: String
     let photoCredit: String
