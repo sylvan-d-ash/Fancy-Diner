@@ -14,15 +14,16 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(menuSections) { section in
-                    Section(section.name) {
+                    Section(header: Text(section.name)) {
                         ForEach(section.items) { item in
-                            Text(item.name)
+                            ItemRow(menuItem: item)
                         }
                     }
+                    //.headerProminence(.increased)
                 }
             }
             .navigationTitle("Menu")
-            .listStyle(GroupedListStyle())
+            .listStyle(.insetGrouped)
         }
     }
 }
