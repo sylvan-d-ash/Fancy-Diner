@@ -16,7 +16,20 @@ struct ContentView: View {
                 ForEach(menuSections) { section in
                     Section(header: Text(section.name)) {
                         ForEach(section.items) { item in
-                            ItemRow(menuItem: item)
+                            /*
+                             NOTE:
+                             Every time SwiftUI creates a row in our List, it will also create the NavigationLink and ALSO create the ItemDetail for every visible row!
+
+                            NavigationLink {
+                                ItemDetail(item: item)
+                            }, label: {
+                                ItemRow(menuItem: item)
+                            }
+                             */
+
+                            NavigationLink(value: item) {
+                                ItemRow(menuItem: item)
+                            }
                         }
                     }
                     //.headerProminence(.increased)
@@ -24,6 +37,11 @@ struct ContentView: View {
             }
             .navigationTitle("Menu")
             .listStyle(.insetGrouped)
+
+            //.navigationDestination(for: MenuItem.self) { item in
+            //    ItemDetail(item: item)
+            //}
+            .navigationDestination(for: MenuItem.self, destination: ItemDetail.init)
         }
     }
 }

@@ -13,7 +13,7 @@ struct MenuSection: Decodable, Identifiable {
     let items: [MenuItem]
 }
 
-struct MenuItem: Decodable, Identifiable {
+struct MenuItem: Decodable, Identifiable, Hashable {
     let id: UUID
     let name: String
     let photoCredit: String
