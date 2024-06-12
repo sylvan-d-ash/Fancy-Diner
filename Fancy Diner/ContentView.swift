@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var order: Order
     let menuSections = Bundle.main.decode([MenuSection].self, from: "menu.json")
 
     var body: some View {
@@ -38,14 +39,20 @@ struct ContentView: View {
             .navigationTitle("Menu")
             .listStyle(.insetGrouped)
 
-            //.navigationDestination(for: MenuItem.self) { item in
-            //    ItemDetail(item: item)
-            //}
-            .navigationDestination(for: MenuItem.self, destination: ItemDetail.init)
+            .navigationDestination(for: MenuItem.self) { item in
+                ItemDetail(item: item)
+                    .environmentObject(order)
+            }
+
+            /*
+             The below doesn't seem to work with the EnvironmentObject added to it
+             */
+            //.navigationDestination(for: MenuItem.self, destination: ItemDetail.init)
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(Order())
 }

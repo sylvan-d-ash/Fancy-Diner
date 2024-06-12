@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Order {
-    private(set) var items = [MenuItem]()
+class Order: ObservableObject {
+    @Published private(set) var items = [MenuItem]()
 
     var total: Int {
         if items.count > 0 {
