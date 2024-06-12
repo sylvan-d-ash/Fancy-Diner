@@ -18,6 +18,7 @@
 		5E1C4EA92C08B41400FDD07F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C4EA82C08B41400FDD07F /* ItemRow.swift */; };
 		5E1C4EAB2C09F6D900FDD07F /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C4EAA2C09F6D900FDD07F /* ItemDetail.swift */; };
 		5E92F3012C19827E00270366 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E92F3002C19827E00270366 /* OrderView.swift */; };
+		5E92F3032C19843900270366 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E92F3022C19843900270366 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5E1C4EA82C08B41400FDD07F /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		5E1C4EAA2C09F6D900FDD07F /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		5E92F3002C19827E00270366 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		5E92F3022C19843900270366 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				5E1C4EA82C08B41400FDD07F /* ItemRow.swift */,
 				5E1C4EAA2C09F6D900FDD07F /* ItemDetail.swift */,
 				5E92F3002C19827E00270366 /* OrderView.swift */,
+				5E92F3022C19843900270366 /* MenuView.swift */,
 				5E1C4EA02C0755E000FDD07F /* Model */,
 				5E1C4E9D2C074BA900FDD07F /* Extensions */,
 				5E1C4EA52C0762E800FDD07F /* Resources */,
@@ -187,6 +190,7 @@
 				5E92F3012C19827E00270366 /* OrderView.swift in Sources */,
 				5E1C4E912C074B7D00FDD07F /* ContentView.swift in Sources */,
 				5E1C4E9F2C074BB700FDD07F /* Bundle.swift in Sources */,
+				5E92F3032C19843900270366 /* MenuView.swift in Sources */,
 				5E1C4EA42C0761F400FDD07F /* Order.swift in Sources */,
 				5E1C4EA92C08B41400FDD07F /* ItemRow.swift in Sources */,
 				5E1C4EA22C0755E900FDD07F /* Menu.swift in Sources */,
