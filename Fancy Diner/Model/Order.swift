@@ -25,4 +25,8 @@ class Order: ObservableObject {
         guard let index = items.firstIndex(where: { $0.id == item.id }) else { return }
         items.remove(at: index)
     }
+
+    func remove(at offsets: IndexSet) {
+        items.remove(atOffsets: offsets)
+    }
 }
