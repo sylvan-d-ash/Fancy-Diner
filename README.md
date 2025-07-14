@@ -1,6 +1,6 @@
 # Fancy-Diner
-A practice SwiftUI app for a restaurant menu ordering system
 
+The Fancy-Diner app is a practice project developed using SwiftUI, showcasing a restaurant menu ordering system. It features a multi-view architecture with a TabView for navigation, allowing users to browse menu items, manage their cart, and proceed to checkout. The app includes essential functionalities such as adding and removing items from the cart, displaying total price with tip, and confirming orders through an alert system. This project demonstrates proficiency in SwiftUI and serves as a foundation for further exploration into iOS app development.
 
 ## Screenshots
 
